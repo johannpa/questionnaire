@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="floatLeft">
+        <img class="taille300 panier" src="img/panier.jpg" alt="Un pannier">
+    </div>
+    <div class="floatLeft">
+        <div class="orange">
+            <img class="taille100 floatLeft" src="img/oranges.png" alt="Une orange">
+            <ul class="floatLeft taille200">
+            </ul>
+            <div class="floatLeft">
+                <div>
+                    <label for="poidsOrange">Poids total</label>
+                    <input type="number" name="poidsOrange" id="poidsOrange">
+                </div>
+                <div>
+                    <label for="prixOrange">Prix total</label>
+                    <input type="number" name="prixOrange" id="prixOrange">
+                </div>
+                <button onclick="verifierResultatOrange()">Valider</button>
+            </div>
+            <div class="floatLeft orangeResultat"></div>
+        </div>
+        <div class="clearBoth"></div>
+        <div class="clementine">
+            <img class="taille100 floatLeft" src="img/clementines.jpg" alt="Des clementines">
+            <ul class="floatLeft taille200">
+            </ul>
+            <div class="floatLeft">
+                <div>
+                    <label for="poidsClementine">Poids total</label>
+                    <input type="number" name="poidsClementine" id="poidsClementine">
+                </div>
+                <div>
+                    <label for="prixClementine">Prix total</label>
+                    <input type="number" name="prixClementine" id="prixClementine">
+                </div>
+                <button onclick="verifierResultatClementine()">Valider</button>
+            </div>
+            <div class="floatLeft clementineResultat"></div>
+        </div>
+        <div class="clearBoth"></div>
+        <div class="fraise">
+            <img class="taille100 floatLeft" src="img/fraises.png" alt="Une fraise">
+            <ul class="floatLeft taille200">
+            </ul>
+            <div class="floatLeft">
+                <div>
+                    <label for="poidsFraise">Poids total</label>
+                    <input type="number" name="poidsFraise" id="poidsFraise">
+                </div>
+                <div>
+                    <label for="prixFraise">Prix total</label>
+                    <input type="number" name="prixFraise" id="prixFraise">
+                </div>
+                <button onclick="verifierResultatFraise()">Valider</button>
+            </div>
+            <div class="floatLeft fraiseResultat"></div>
+        </div>
+    </div>
+    <div class="clearBoth"></div>
+    <div class="fin"></div>
+</body>
+<script src="boiteOutil.js"></script>
+<script src="fruits.js"></script>
+<script src="app.js"></script>
+</html>
